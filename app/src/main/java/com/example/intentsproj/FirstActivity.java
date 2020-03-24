@@ -21,22 +21,17 @@ public class FirstActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               openActivity2();
-            }
-        });
-
-        button = (Button) findViewById(R.id.ok);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),myString,Toast.LENGTH_SHORT).show();
+                openActivity2();
             }
-        });
+        })
+        ;
     }
+
 
     public void openActivity2() {
         Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
-    }
+   }
 
 }
