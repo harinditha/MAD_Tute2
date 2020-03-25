@@ -15,6 +15,7 @@ import android.view.Menu;
 public class FirstActivity extends AppCompatActivity {
 //    private Button button;
 //    String myString = "You just clicked the OK button";
+    public static final String EXTRA_NUmber = "com.example.intentsproj.EXTRA_NUMBER";
 
 
     @Override
@@ -43,11 +44,12 @@ public class FirstActivity extends AppCompatActivity {
 //                showtoast();
 
                     EditText userTextEntry = (EditText) findViewById(R.id.editText3);
-                    String userData = userTextEntry.getText().toString();
-                    int userNumber = Integer.parseInt(userData);
+//                    String userData = userTextEntry.getText().toString();
+//                    int userNumber = Integer.parseInt(userData);
+                    int number = Integer.parseInt(userTextEntry.getText().toString());
 
                     Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-                    intent.putExtra("parameter name", userNumber);
+                    intent.putExtra(EXTRA_NUmber, number);
                     startActivity(intent);
 
                     showtoast();
