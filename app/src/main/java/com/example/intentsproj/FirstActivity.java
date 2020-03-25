@@ -16,6 +16,7 @@ public class FirstActivity extends AppCompatActivity {
 //    private Button button;
 //    String myString = "You just clicked the OK button";
     public static final String EXTRA_NUmber = "com.example.intentsproj.EXTRA_NUMBER";
+    public static final String EXTRA_NUmber2 = "com.example.intentsproj.EXTRA_NUMBER2";
 
 
     @Override
@@ -48,8 +49,12 @@ public class FirstActivity extends AppCompatActivity {
 //                    int userNumber = Integer.parseInt(userData);
                     int number = Integer.parseInt(userTextEntry.getText().toString());
 
+                    EditText userTextEntry2 = (EditText) findViewById(R.id.editText5);
+                    int number2 = Integer.parseInt(userTextEntry2.getText().toString());
+
                     Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
                     intent.putExtra(EXTRA_NUmber, number);
+                    intent.putExtra(EXTRA_NUmber2, number2);
                     startActivity(intent);
 
                     showtoast();

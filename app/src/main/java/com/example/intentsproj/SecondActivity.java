@@ -20,9 +20,12 @@ public class SecondActivity extends AppCompatActivity {
         //Get the Intent that started us to find the parameter (extra).
         Intent intent = getIntent();
         int myValue = intent.getIntExtra(FirstActivity.EXTRA_NUmber, 0);
+        int myValue2 = intent.getIntExtra(FirstActivity.EXTRA_NUmber2, 0);
         //display the value to the screen.
         TextView displayNumber = (TextView) findViewById(R.id.textView5);
+        TextView displaynumber2 = (TextView) findViewById(R.id.textView6);
 
         displayNumber.setText("" +myValue);
+        displaynumber2.setText("" +myValue2);
     }
 }
