@@ -29,12 +29,6 @@ public class FirstActivity extends AppCompatActivity {
 
     }
 
-//    public void showtoast() {
-//        Toast toast = Toast.makeText(FirstActivity.this, "You just clicked the OK button", Toast.LENGTH_SHORT);
-//        toast.setGravity(Gravity.TOP | Gravity.LEFT, 0, 0);
-//        toast.show();
-//    }
-
 
         public void openActivity2() {
             Button Btn = (Button) findViewById(R.id.ok);
@@ -45,8 +39,7 @@ public class FirstActivity extends AppCompatActivity {
 //                showtoast();
 
                     EditText userTextEntry = (EditText) findViewById(R.id.editText3);
-//                    String userData = userTextEntry.getText().toString();
-//                    int userNumber = Integer.parseInt(userData);
+
                     int number = Integer.parseInt(userTextEntry.getText().toString());
 
                     EditText userTextEntry2 = (EditText) findViewById(R.id.editText5);
@@ -59,7 +52,6 @@ public class FirstActivity extends AppCompatActivity {
 
                     showtoast();
 
-//                openActivity2();
                 }
                 public void showtoast() {
                     Toast toast = Toast.makeText(FirstActivity.this, "You just clicked the OK button", Toast.LENGTH_SHORT);
@@ -72,16 +64,3 @@ public class FirstActivity extends AppCompatActivity {
     }
 
 
-//    public void openActivity2() {
-//        Intent intent = new Intent(this, SecondActivity.class);
-//        intent.putExtra("parameter name", "userNumber");
-//        startActivity(intent);
-//   }
-
- //   public void showtoast() {
-//        Toast toast = Toast.makeText(this, "You just clicked the OK button", Toast.LENGTH_SHORT);
-//        toast.setGravity(Gravity.TOP | Gravity.LEFT, 0, 0);
-//        toast.show();
-//    }
-//
-//}
