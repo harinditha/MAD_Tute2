@@ -35,9 +35,6 @@ public class FirstActivity extends AppCompatActivity {
             Btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                Toast.makeText(getApplicationContext(),myString,Toast.LENGTH_SHORT).show();
-//                showtoast();
-
                     EditText userTextEntry = (EditText) findViewById(R.id.editText3);
 
                     int number = Integer.parseInt(userTextEntry.getText().toString());
@@ -55,7 +52,7 @@ public class FirstActivity extends AppCompatActivity {
                 }
                 public void showtoast() {
                     Toast toast = Toast.makeText(FirstActivity.this, "You just clicked the OK button", Toast.LENGTH_SHORT);
-                    toast.setGravity(Gravity.TOP | Gravity.LEFT, 0, 0);
+                    toast.setGravity(Gravity.TOP | Gravity.LEFT, 200, 2000);
                     toast.show();
                 }
 
